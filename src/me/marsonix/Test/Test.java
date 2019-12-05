@@ -1,5 +1,6 @@
 package me.marsonix.Test;
 
+import java.time.LocalDateTime;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -62,11 +63,15 @@ public class Test {
             System.out.println("Delta jest mniejsza niż 0");
         }
 
+        // Dołącz do kursu programowania w Javie już dzisiaj
+
+        JavaWSB wsb = new Kurs("Kurs Programowania w Javie",
+                "Grunwaldzka 238a, 80-266 Gdańsk",
+                "B216");
+        wsb.attend(LocalDateTime.now());
 
 
-
-
-
+        System.out.println("test");
 
       //  double suma = Math.round(Math.random()*100);
       //  double pi = Math.PI;
